@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #424549 */
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+.welcome_background {
+    background-image: url('./736059.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.chatSection  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+} 
+
+.circularProgress {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scrolling::-webkit-scrollbar {
+    background-color: #424549;
+    width: 6px;
+}
+
+.scrolling::-webkit-scrollbar-thumb {
+    background-color: #282b30;
+    border-radius: 25px;
+    
+    
+
+}
+
+.scrolling {
+    scrollbar-width: none;
+}
+
+html {
+    scroll-behavior: smooth;
   }
+
+.gifContainer {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.white-scrolling::-webkit-scrollbar {
+    background-color: rgb(243 244 246);
+    width: 6px;
+}
+.white-scrolling::-webkit-scrollbar-thumb {
+    background-color: rgb(209 213 219);
+    border-radius: 25px;
+    
+    
+
 }
 
-.App-link {
-  color: #61dafb;
+.BsEmojiSmile {
+    color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
